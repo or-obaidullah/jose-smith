@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 /* ================================= */
 /* BASIC COMPONENTS */
 /* ================================= */
@@ -11,7 +11,219 @@ body{
 /* ================================= */
 /* RESUABLE COMPONENTS */
 /* ================================= */
-
+.title{
+    font-weight: 700;
+    font-size: 35px; 
+    color: #35404e;
+    font-family: 'Poppins', sans-serif;
+}
+.title-small{
+    font-weight: 700;
+    font-size: 17px; 
+    color: #35404e;
+    font-family: 'Poppins', sans-serif;
+}
+.text-pera{
+    font-size: 14px;
+    font-weight: 400;
+    color: #515c6a;
+    line-height: 1.7em;
+}
+.main-btn{
+    background-color: #d83434;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 27px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.bg-maker{
+    background: #f6f7fb;
+    padding: 60px 0;
+}
 /* ================================= */
 /* HEADER SECTION */
 /* ================================= */
+.header-section{
+    background: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.header-section .logo{
+    font-weight: 900;
+    font-size: 25px;
+}
+.header-section .nav-item .nav-link{
+    font-size: 14.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.icon a{
+    background: #d83434;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.8s;
+}
+.icon a:hover{
+    background: #fff;
+    color: #d83434;
+}
+.header-section .banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-section .banner h6{
+    color: #d83434;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.header-section .banner h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================================= */
+/* ABOUT SECTION */
+/* ================================= */
+.about-section .img-one{
+    max-width: 95%;
+}
+.about-section .about-left-part{
+    position: relative;
+}
+.about-section .img-two {
+    position: absolute;
+    max-width: 35%;
+    bottom: -32px;
+    right: 0px;
+}
+.about-section h1 {
+   font-weight: 700;
+   font-size: 35px; 
+   color: #35404e;
+   font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* ================================= */
+/* SERVICES SECTION */
+/* ================================= */
+
+.services-section .icons{
+    color: #d83434;
+    font-size: 25px;
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ================================= */
+/* FREELANCER SECTION */
+/* ================================= */
+.freelancer-section{
+    height: 250px;
+    background: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.freelancer-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* ================================= */
+/* TESTIMONIAL SECTION */
+/* ================================= */
+.testimonial{
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+.testimonial img{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto;
+}
+.testimonial .fas{
+    color: #d83434;
+    font-size: 25px;
+}
+.testimonial .quote-text{
+    max-width: 60%;
+    font-size: 16px;
+    line-height: 1.7;
+}
+/* ================================= */
+/* PORTFOLIO SECTION */
+/* ================================= */
+.portfolio h6{
+    color: #d83434;
+    font-weight: 900;
+}
+/* ================================= */
+/* Blog SECTION */
+/* ================================= */
+
+.blog h6{
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-top: 17px;
+    font-size: 17px;
+}
+.blog .card-bottom{
+    max-width: 85%;
+    margin: auto;
+}
+.blog .img-inner{
+    bottom: 0;
+    background: #d83434;
+    color: #fff;
+    font-size: 14px;
+    left: 10%;
+    padding: 6px 50px 6px 10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+/* ================================= */
+/* CONTACT SECTION */
+/* ================================= */
+.contact .form-control:focus{
+    border-color: #d83434;
+    box-shadow: none;
+}
+textarea{
+    height: 145px;
+}
+.contact-icon{
+    color: #d83434;
+    font-size: 30px;
+}
+.contact h6{
+    color: #d83434;
+    font-weight: 900;
+    font-size: 15px;
+    margin: 15px 0;
+}
+/* ================================= */
+/* FOOTER SECTION */
+/* ================================= */
+footer{
+    background:#35404e;
+    padding: 40px 0;
+}
