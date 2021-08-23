@@ -49,3 +49,8 @@ $('.owl-carousel').owlCarousel({
 
 //wow js
 new WOW().init();
+
+// skill
+$(".skill-toggle").click(function(){
+    $(".skills").toggle(500)
+})
