@@ -60,12 +60,6 @@ body{
 .sticky .text-white{
     color: #000 !important;
 }
-.header-section{
-    background: url(../img/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
 .header-section .logo{
     font-weight: 900;
     font-size: 25px;
@@ -91,23 +85,41 @@ body{
     background: #fff;
     color: #d83434;
 }
-.header-section .banner{
+/* ================================= */
+/* BANNER SECTION */
+/* ================================= */
+.banner-section{
+    background: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    top: -71px;
+}
+/* .banner-section .banner{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+.banner-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.header-section .banner h6{
+.banner-section h6{
     color: #d83434;
     font-weight: 800;
     font-size: 20px;
 }
 
-.header-section .banner h1{
+.banner-section h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 62px;
 }
+
 
 /* ================================= */
 /* ABOUT SECTION */
@@ -303,4 +315,54 @@ footer{
     border-radius: 5px;
     font-size: 15px;
     display: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .sticky{
+        display: none;
+    } 
+    .banner-section{
+        top: 0;
+    }
+    .header-section .icon{
+        position: absolute;
+        right: 58px;
+        top: 8px;
+    }
+    .header-section button:focus{
+        box-shadow: none;
+        border: none;
+        font-size: 17px;
+        color: #000;
+    }
+    .header-section button span{
+        color: #000;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .navbar-nav{
+        margin-top: 35px;
+    }
+    .navbar-nav .nav-item a{
+        color: #888 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .navbar-nav .nav-item{
+        border-bottom: 1px solid lightgray;
+        color: #888 !important;
+        width: 98%;
+    }
+    .navbar-nav li:last-child{
+        border-bottom: none;
+    }
+    .header-section .logo{
+        color: #35404e;
+    }  
+}
+@media (max-width: 480px) {   
+    .header-section .icon{
+        display: none !important;
+    }
 }
